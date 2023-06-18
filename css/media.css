@@ -1,0 +1,333 @@
+@media screen and (max-width: 767px) {
+    .solutions {
+        text-transform: capitalize;
+    }
+
+    .team > .container {
+        max-width: 294px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 766px;
+    }
+
+    .menu-open-btn {
+        display: none;
+    }
+
+    .mob-menu {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 120px;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 40px;
+        margin-right: 121px;
+        font-style: normal;
+    }
+
+    .headlink {
+        position: relative;
+        color: var(--bg-color);
+        height: 100%;
+        padding-bottom: 26.3px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        transition: color var(--basic-transition);
+    }
+
+    .currient-page:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        display: block;
+        background-color: var(--linkaction-color);
+        border-radius: 2px;
+    }
+
+    .address-list {
+        display: flex;
+        gap: 12px;
+        font-style: normal;
+    }
+
+    .address-link {
+        color: var(--address-link-color);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        transition: color var(--basic-transition);
+    } 
+
+    .headlink:hover,
+    .headlink:focus,
+    .address-link:hover,
+    .address-link:focus {
+        color: var(--linkaction-color);
+    }
+
+    .hero {
+        max-width: 766px;
+    }
+
+    .solutions {
+        max-width: 496px;
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
+    .features-list {
+        column-gap: 24px;
+    }
+
+    .features-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .lists-headline {
+        text-align: left;
+    }
+
+    .team-list {
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .teammate {
+        width: calc((100% - 24px)/2);
+    }
+
+    .customers-list {
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .customer-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .footer-logo-container,
+    .footer-social,
+    .subscribe-box {
+        align-items: start;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+    }
+
+    .subscribe-input {
+        width: 264px;
+    }
+
+    /** ------------PORTFOLIO------------ **/
+
+    .filtre-btns {
+        justify-content: center;
+    }
+
+    .products {
+        column-gap: 24px;
+    }
+
+    .products-item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .header {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .address-list {
+        flex-direction: column;
+    }
+    .team>.container {
+        max-width: 582px;
+    }
+
+    .customers>.container {
+        max-width: 582px;
+    }
+
+    .footer>.container {
+        max-width: 582px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .logo {
+        margin-right: 76px;
+    }
+    .navigation {
+        margin-right: 332px;
+    }
+
+    .address-list {
+        gap: 40px;
+    }
+
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5;
+    letter-spacing: 0.02em;
+    }
+
+    .features-icon-box {
+        width: 264px;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-filtre-button);
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+    .hero {
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/studio/hero-desktop-bg.jpg");
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/studio/hero-desktop-bg-2x.jpg");
+        }
+    }
+
+    .solutions {
+        margin-bottom: 48px;
+    }
+
+    .features {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+
+    .lists-headline {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+    }
+
+    .lists-text {
+        font-weight: 400;
+    }
+
+    .our-products {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 120px;
+    }
+
+    .our-products-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .our-products-item {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .teammate {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+
+    .customer-item {
+        width: calc((100% - 120px) / 6);
+    }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .footer-logo-container {
+        margin-right: 120px;
+    }
+
+    .footer-social {
+        margin-right: 80px;
+    }
+
+    .subscribe-input,
+    .subscribe-input::placeholder {
+        opacity: 1;
+    }
+
+    /** ------------PORTFOLIO------------ **/
+
+    .products {
+        row-gap: 48px;
+    }
+
+    .products-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .product-link {
+        box-shadow: none;
+    }
+
+    .product-text {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+        width: 100%;
+        height: 100%;
+        padding: 40px 32px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--bg-filtre-button);
+        letter-spacing: 0.02em;
+        background-color: var(--web-color);
+        transition: transform var(--basic-transition);
+    }
+
+    .product-link:hover .product-text,
+    .product-link:focus .product-text {
+        transform: translateY(0);
+    }
+    }

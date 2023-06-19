@@ -558,12 +558,10 @@ background-color: #31D0AA;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border: 1px solid var(--body-bg-color);
     border-radius: 4px;
-    opacity: 0.3;
 }
 
 .subscribe-input::placeholder {
     color: var(--white-text-color);
-    opacity: 0.6;
 }
 
 .subscribe-input:focus {
@@ -702,6 +700,11 @@ transform: translateY(-680px);
     transition: border-color var(--basic-transition);
 }
 
+.modal-input:focus,
+.modal-ta:focus {
+    border-color: var(--web-color);
+}
+
 .modal-input-icon {
     position: absolute;
     top: 50%;
@@ -709,6 +712,10 @@ transform: translateY(-680px);
     transform: translateY(-50%);
     fill: var(--bg-color);
     transition: fill var(--basic-transition);
+}
+
+.modal-input:focus ~ .modal-input-icon {
+    fill: var(--web-color);
 }
 
 .modal-comment-field {

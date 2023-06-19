@@ -84,10 +84,6 @@
         color: var(--linkaction-color);
     }
 
-    .hero {
-        max-width: 766px;
-    }
-
     .solutions {
         max-width: 496px;
         margin-bottom: 36px;
@@ -226,7 +222,6 @@
     }
 
     .hero {
-        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/studio/hero-desktop-bg.jpg");
         padding-top: 188px;
         padding-bottom: 188px;

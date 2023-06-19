@@ -1,3 +1,9 @@
+@media screen and (max-width: 416px) {
+    .mob-menu-tel {
+        font-size: 26px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .solutions {
         text-transform: capitalize;
@@ -133,10 +139,19 @@
 
     .subscribe-form {
         flex-direction: row;
+        gap: 24px;
     }
 
     .subscribe-input {
         width: 264px;
+    }
+
+    .backdrop-container {
+        max-width: 438px;
+    }
+
+    .modal {
+        padding: 24px;
     }
 
     /** ------------PORTFOLIO------------ **/
@@ -163,6 +178,7 @@
     .address-list {
         flex-direction: column;
     }
+
     .team>.container {
         max-width: 582px;
     }
@@ -295,6 +311,14 @@
         opacity: 1;
     }
 
+    .modal-input:focus,
+    .modal-ta:focus {
+        border-color: var(--web-color);
+    }
+    .modal-input:focus~.modal-input-icon {
+        fill: var(--web-color);
+    }
+
     /** ------------PORTFOLIO------------ **/
 
     .products {
@@ -330,4 +354,4 @@
     .product-link:focus .product-text {
         transform: translateY(0);
     }
-    }
+}

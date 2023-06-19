@@ -39,6 +39,10 @@ img {
     list-style-type: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -63,8 +67,9 @@ img {
     --address-link-color: #434455;
     --bg-filtre-button: #F4F4FD;
     --customer-color: #8E8F99;
-    --basic-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --border-color: #E7E9FC;
+    --basic-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --windows-transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -146,7 +151,7 @@ img {
     padding-top: 24px;
     padding-bottom: 40px;
     background-color: var(--body-bg-color);
-    transition: transform var(--basic-transition), visibility var(--basic-transition);
+    transition: transform var(--windows-transition), visibility var(--windows-transition);
 }
 
 .mob-menu > .container {
@@ -604,7 +609,15 @@ background-color: #31D0AA;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 1;
-    transition: opacity var(--basic-transition), visibility var(--basic-transition);
+    transition: opacity var(--windows-transition), visibility var(--windows-transition);
+}
+
+.backdrop-container {
+    max-width: 422px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .backdrop.is-hidden {
@@ -614,30 +627,24 @@ background-color: #31D0AA;
 } 
 
 .modal {
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    min-width: 408px;
+    width: 100%;
     min-height: 584px;
-    padding-top: 72px;
-    padding-right: 24px;
-    padding-bottom: 24px;
-    padding-left: 24px;
+    padding: 24px 16px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: transform var(--basic-transition);
+    transition: transform var(--windows-transition);
 }
 
 .backdrop.is-hidden .modal {
-transform: translate(-50%, -50%) scale(0);
+transform: translateY(-680px);
 }
 
 .close-btn {
-    position: absolute;
-    top: 24px;
-    right: 24px;
+    margin-left: auto;
+    margin-bottom: 24px;
     width: 24px;
     height: 24px;
     padding: 0;
@@ -650,9 +657,6 @@ transform: translate(-50%, -50%) scale(0);
     cursor: pointer;
     transition: background-color var(--basic-transition), border var(--basic-transition);
 }
-
-
-
 
 /**-------------MODAL_FORM-------------**/
 
@@ -698,11 +702,6 @@ transform: translate(-50%, -50%) scale(0);
     transition: border-color var(--basic-transition);
 }
 
-.modal-input:focus,
-.modal-ta:focus {
-    border-color: var(--web-color);
-}
-
 .modal-input-icon {
     position: absolute;
     top: 50%;
@@ -710,10 +709,6 @@ transform: translate(-50%, -50%) scale(0);
     transform: translateY(-50%);
     fill: var(--bg-color);
     transition: fill var(--basic-transition);
-}
-
-.modal-input:focus ~ .modal-input-icon {
-    fill: var(--web-color);
 }
 
 .modal-comment-field {
@@ -724,9 +719,6 @@ transform: translate(-50%, -50%) scale(0);
     height: 120px;
     resize: none;
     padding: 8px 16px;
-    line-height: 1.17;
-    color: rgba(46, 47, 66, 0.4); /*! !!! **/
-    border: 1px solid rgba(46, 47, 66, 0.2); /*! !!! **/
 }
 
 .modal-ta::placeholder {

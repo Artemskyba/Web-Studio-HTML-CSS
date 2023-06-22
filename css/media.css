@@ -31,10 +31,13 @@
         margin-right: 120px;
     }
 
+    .header-flex {
+        gap: 121px;
+    }
+
     .navigation {
         display: flex;
         gap: 40px;
-        margin-right: 121px;
         font-style: normal;
     }
 
@@ -196,8 +199,9 @@
     .logo {
         margin-right: 76px;
     }
-    .navigation {
-        margin-right: 332px;
+
+    .header-flex {
+        gap: 332px;
     }
 
     .address-list {

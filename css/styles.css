@@ -237,7 +237,8 @@ img {
 
 .mob-menu-social-list {
     display: flex;
-    gap: calc((100% - 160px) / 4);
+    gap: calc((100% - 160px) / 3);
+     /* or justify-content: space-between; */
     max-width: 328px;
 }
 
